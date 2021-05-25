@@ -3,8 +3,8 @@ class Color:
         self._color = color
 
     @property
-    def color(self, color):
-        self._color = color
+    def color(self):
+        return self._color
 
     @color.setter
     def color(self, color):

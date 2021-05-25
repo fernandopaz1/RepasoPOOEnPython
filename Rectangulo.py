@@ -9,8 +9,8 @@ class Rectangulo(FiguraGeometrica, Color):
     Clase de rectangulos
     """
 
-    def __init__(self, altura, ancho, color):
-        FiguraGeometrica.__init__(self, altura, ancho)
+    def __init__(self, alto, base, color):
+        FiguraGeometrica.__init__(self, alto, base)
         Color.__init__(self, color)
 
     def area(self):

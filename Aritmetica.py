@@ -6,9 +6,9 @@ class Aritmetica:
     restar, etc.
     """
 
-    def __init__(self, operandoA, operandoB):
-        self.operandoA = operandoA
-        self.operandoB = operandoB
+    def __init__(self, operando_a, operando_b):
+        self.operandoA = operando_a
+        self.operandoB = operando_b
         pass
 
     def suma(self):
@@ -21,7 +21,7 @@ class Aritmetica:
         return self.operandoA * self.operandoB
 
     def dividir(self):
-        if(self.operandoB != 0):
+        if self.operandoB != 0:
             return self.operandoA / self.operandoB
         else:
             print("Error no se puede dividir por cero")

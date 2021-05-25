@@ -9,7 +9,6 @@ class FiguraGeometrica:
         else:
             self._ancho = 0
 
-
     @property
     def altura(self):
         return self._altura

@@ -29,13 +29,13 @@ class Persona:
     # Si dejamos _edad y no le hacemos un metodo setter es un tributo read only
     # ya que no se puede modificar con la sintaxis persona1.edad = ...
 
-    #def __del__(self):  # Para eliminaar un objeto hay que usar el metodo
+    # def __del__(self):  # Para eliminaar un objeto hay que usar el metodo
         # __del__ herdado de la clase object, no es algo que se use mucho ya que
         # python cuenta con garbage collector. Se llama como del nombreObjeto
-        #print(f'Eliminando: {self._nombre} {self.__apellido}')
+        # print(f'Eliminando: {self._nombre} {self.__apellido}')
 
-    #Soobreescribiendo el metodo __str__ de object
-    def __str__(self, *args, **kwargs): # Cuando hacemos print manda a llamar este metodo
+    # Sobreescribiendo el metodo __str__ de object
+    def __str__(self, *args, **kwargs):  # Cuando hacemos print manda a llamar este metodo
         return f'{self._nombre} {self.__apellido} {self._edad}'
 
     pass  # indica que no se procesa nada mas y se crea
