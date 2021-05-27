@@ -7,6 +7,10 @@ class Producto:
         self._nombre = nombre
         self._precio = precio
 
+    @property
+    def precio(self):
+        return self._precio
+
     def __str__(self):
         return f'Id producto: {self._id_producto}, Nombre: {self._nombre} precio: {self._precio}'
 
@@ -15,4 +19,3 @@ if __name__ == '__main__':
     print(producto1)
     producto2 = Producto('Zapatillas', 200)
     print(producto2)
-    pass
