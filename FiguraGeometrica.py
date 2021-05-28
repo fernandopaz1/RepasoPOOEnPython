@@ -1,4 +1,9 @@
-class FiguraGeometrica:
+# ABC: abstract base clase
+# para crear una clse abtracta hay que heredear de abc
+from abc import ABC, abstractmethod
+
+
+class FiguraGeometrica(ABC):
     def __init__(self, altura, ancho):
         if altura >= 0:           # Validando que alto y ancho sean positivos
             self._altura = altura
@@ -27,3 +32,7 @@ class FiguraGeometrica:
 
     def __str__(self):
         return f'altura: {self._altura} ancho: {self._ancho}'
+
+    @abstractmethod
+    def area(self):
+        pass
